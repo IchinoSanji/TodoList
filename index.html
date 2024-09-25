@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    #content {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #007bff;
+      margin-top: 20px;
+    }
+
+    p {
+      background-color: #e9ecef;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+
+    form {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>CRUD Application</h1>
+
+  <div id="content"></div>
+
+  <!-- Formulário para adicionar uma nova tarefa -->
+  <h2>Cadastrar Tarefa</h2>
+  <form id="taskForm">
+    <input type="text" id="taskTitle" placeholder="Título da Tarefa" required />
+    <textarea id="taskDescription" placeholder="Descrição da Tarefa" required></textarea>
+    <button type="submit">Cadastrar Tarefa</button>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>
